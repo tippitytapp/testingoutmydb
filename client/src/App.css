@@ -1,0 +1,102 @@
+/* *{
+  border:1px solid black;
+} */
+.App {
+  text-align: center;
+  background-color:beige;
+  height: 100vh;
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.home{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.register, .login{
+  width:15%;
+  margin: 6%;
+  padding: 3%;
+  font-size: 24px;
+  border: 1px dashed #282c34;
+  border-radius: 15px;
+}
+a{
+  text-decoration: none;
+  color: white;
+  padding: 10%;
+  font-size: 20px;
+}
+a:hover{
+  text-decoration:underline;
+  color:#282c34;
+}
+.homebuttons{
+  background-color:#282c34;
+  color: white;
+  width: 75%;
+  height: 50px;
+  border-radius: 10px;
+}
+.homebuttons:hover{
+  background-color: white;
+  color: #282c34;
+  text-decoration: underline;
+}
+.registerform, .loginform{
+  display:flex;
+  justify-content: center;
+  width: 100%;
+  margin-top:2%
+}
+input{
+  margin:1%;
+  width:75%;
+}
+.registerr, .loginn{
+  display:flex;
+  flex-direction: column;
+  width: 50%;
+  align-items:center;
+  justify-content: center;
+  border: 1px dashed #282c34;
+  border-radius: 15px;
+  padding: 2%;
+}
+.checks{
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+}
+
+.boxes{
+  width: 25%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.check{
+  margin: 0;
+}
+
+.switch{
+  color: #282c34
+}
+.switch:hover{
+  color: red;
+}
+.add:hover{
+  color:white;
+  text-decoration: underline;
+  font-size: 24px;
+}
