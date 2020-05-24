@@ -1,10 +1,11 @@
-/* *{
+html{  background-color: beige;}
+*{
   border:1px solid black;
-} */
+}
 .App {
   text-align: center;
   background-color:beige;
-  height: 100vh;
+  height: 100%;
 }
 
 .App-header {
@@ -95,8 +96,63 @@ input{
 .switch:hover{
   color: red;
 }
+.add{
+  padding: 2%;
+}
 .add:hover{
   color:white;
   text-decoration: underline;
   font-size: 24px;
+}
+.headerlinks{
+  width:75%;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.links{
+  width: 100%;
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+}
+.headeris{
+  padding: 2%;
+}
+.headeris:hover{
+  text-decoration: underline;
+  color: white;
+}
+.yourtickets{
+  display:flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.yourticketsind{
+  border: 1px dashed #282c34;
+  border-radius: 15px;
+  width: 25%;
+  margin: 2%;
+}
+.indTickets{
+  display:flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.indTicket{
+  border: 1px dashed #282c34;
+  border-radius: 15px;
+  width: 25%;
+  margin: 2%;
+}
+.loading{
+  color: red;
+  font-size: 72pt;
+}
+button{
+  background-color: #282c34;
+  color: white;
+  margin: 1%;
 }

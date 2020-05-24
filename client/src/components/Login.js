@@ -1,10 +1,12 @@
 import React, {useState} from "react";
 import axios from "axios";
 import {useHistory, Link} from "react-router-dom";
+import {useDispatch} from 'react-redux';
 
 function Login(){
     const [user, setUser] = useState({email: "", password: ""})
-    const history = useHistory()
+    const history = useHistory();
+    const dispatch = useDispatch();
     const inputChange = e => {
         e.preventDefault();
         setUser({
@@ -21,6 +23,7 @@ function Login(){
                 localStorage.setItem('userId', res.data.user.id)
                 localStorage.setItem('username', res.data.user.name)
                 history.push('/dashboard')
+                dispatch({type: 'LOGGED_IN'})
             })
             .catch(error => {
                 console.log('login error',error)})
